@@ -1,0 +1,26 @@
+{
+    "id": {
+        "required": true
+    },
+    "name": {
+        "required": true
+    },
+    "home_phone": {
+        "at_least_one": true
+    },
+    "cell_phone": {
+        "at_least_one": true
+    },
+    "work_phone": {
+        "at_least_one": true
+    },
+    "birth_date": {
+        "mutually_exclusive": ["govt_id"]
+    },
+    "govt_id": {
+        "mutually_exclusive": ["birth_date"]
+    },
+    "day": {
+        "enum": ["SU", "MO", "TU", "WE", "TH", "FR", "SA"]
+    }
+}
